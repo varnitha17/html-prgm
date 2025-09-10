@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>First CIE</title>
+</head>
+<marquee direction ="left">WEB TECHNOLOGY </marquee direction>
+<marquee direction ="right">WEB TECHNOLOGY</marquee direction>
+<body style="background-color:pink;">
+<h1>Hello World!</h1>
+</body>
+<h1 style="color:black;">WEB LAB</h1>
+<h2 style="color:yellow;">WEB LAB</h2>
+<h3 style="color:purple;">WEB LAB</h3>
+<h4 style="color:brown;">WEB LAB</h4>
+<h5 style="color:green;">WEB LAB</h5>
+<h6 style="color:orange;">WEB LAB</h6>
+<a href="https://www.w3schools.com/">Visit w3school</a>
+<img src="C:\Users\SHAINITHA\Pictures\CIE\flower.jpg"alt="image"width="200"height="150">
+<img src="C:\Users\SHAINITHA\Pictures\CIE\bird.jpg"alt="image"width="200"height="150">
+<p><mark>This is my First Web Technology lab.<del>Technology</del></mark></p>
+<p>Shainitha 4MW23CS141</p>
+</body>
+</html>
