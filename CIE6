@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .calculator {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      width: 320px;
+      text-align: center;
+    }
+
+    .calculator h2 {
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    button {
+      flex: 1 1 45%;
+      padding: 10px;
+      font-size: 14px;
+      cursor: pointer;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .result {
+      margin-top: 20px;
+    }
+
+    .result h3 {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <h2>Simple Calculator</h2>
+    <input type="number" id="num1" placeholder="Enter first number" />
+    <input type="number" id="num2" placeholder="Enter second number" />
+    
+    <div class="buttons">
+      <button onclick="calculate('sum')">Sum</button>
+      <button onclick="calculate('difference')">Difference</button>
+      <button onclick="calculate('product')">Product</button>
+      <button onclick="calculate('quotient')">Quotient</button>
+      <button onclick="calculate('remainder')">Remainder</button>
+      <button onclick="calculate('power')">Power</button>
+      <button onclick="calculate('square')">Square (1st)</button>
+      <button onclick="calculate('sqrt')">Square Root (1st)</button>
+    </div>
+
+    <div class="result">
+      <h3>Result: <span id="result">--</span></h3>
+    </div>
+  </div>
+
+  <script>
+    function calculate(operation) {
+      const num1 = parseFloat(document.getElementById("num1").value);
+      const num2 = parseFloat(document.getElementById("num2").value);
+      let result;
+
+      switch (operation) {
+        case "sum":
+          result = num1 + num2;
+          break;
+        case "difference":
+          result = num1 - num2;
+          break;
+        case "product":
+          result = num1 * num2;
+          break;
+        case "quotient":
+          result = num2 !== 0 ? (num1 / num2).toFixed(3) : "Cannot divide by zero";
+          break;
+        case "remainder":
+          result = num2 !== 0 ? num1 % num2 : "Cannot divide by zero";
+          break;
+        case "power":
+          result = Math.pow(num1, num2);
+          break;
+        case "square":
+          result = Math.pow(num1, 2);
+          break;
+        case "sqrt":
+          result = num1 >= 0 ? Math.sqrt(num1).toFixed(3) : "Invalid input";
+          break;
+        default:
+          result = "Unknown operation";
+      }
+
+      document.getElementById("result").innerText = result;
+    }
+  </script>
+</body>
+</html>
