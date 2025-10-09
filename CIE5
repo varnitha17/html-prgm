@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<h1>Varnitha - 4MW23CS181</h1>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMVITM</title>
+<style>
+body {
+    font-family: "Georgia", serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+main {
+    display: flex;
+    margin-top: 20px;
+}
+section {
+    flex: 2;
+    margin-right: 20px;
+}
+article {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+article h2 {
+    color: #1a1a1a;
+    font-size: 1.8em;
+}
+aside {
+    flex: 1;
+    background-color: #e6e6e6;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+figure {
+    margin: 0;
+    text-align: center;
+}
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+figcaption {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>SMVITM</h1>
+</header>
+
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Autonomy</a></li>
+<li><a href="#">Academics</a></li>
+<li><a href="#">Research</a></li>
+<li><a href="#">Events</a></li>
+</ul>
+</nav>
+
+<main>
+<section>
+<article>
+<h2>Breaking News: College Granted Autonomous Status</h2>
+<p>We are proud to announce that our institution has been officially granted <strong>Autonomous College Status</strong>.</p>
+
+<figure>
+<img src="C:\Users\Varnitha\OneDrive\Desktop\clgimg.jpeg"alt="College Building">
+<figcaption>Celebrating the achievement of autonomous status with the management and staff.</figcaption>
+</figure>
+</article>
+
+<article>
+<h2>Local Sports Team Wins Championship</h2>
+<p>In a thrilling match, our local team secured victory in the national championship, bringing pride to our city.</p>
+<table>
+<tr>
+<th>Team</th>
+<th>Score</th>
+</tr>
+<tr>
+<td>Local Heroes</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Visiting Challengers</td>
+<td>2</td>
+</tr>
+</table>
+</article>
+</section>
+
+
+<aside>
+<h3>Notice Board</h3>
+<ul>
+<li>Autonomy Orientation for students - 10th October</li>
+<li>Workshop  - 12th October</li>
+<li>Faculty Training Program - 15th October</li>
+</ul>
+
+<h3>Weather Update</h3>
+<p>Clear skies with mild temperatures — a perfect day for campus celebrations!</p>
+
+<h3>Upcoming Campus Events</h3>
+<ul>
+<li>Inauguration of Innovation Cell - 20th October</li>
+<li>Annual Cultural Fest “Aarohana” - 25th October</li>
+<li>Research Paper Presentation - 5th November</li>
+</ul>
+</aside>
+</main>
+
+<footer>
+<p>&copy; SMVITM— Autonomous College Edition. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
